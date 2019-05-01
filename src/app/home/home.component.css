@@ -1,0 +1,10 @@
+
+ .img-responsive {width: 500px; height: 500px;  
+    background-color: black;
+    text-align: center;
+    position: relative;
+    top: 20%;
+    background-position: 50%;
+    left: 25%;
+    
+}

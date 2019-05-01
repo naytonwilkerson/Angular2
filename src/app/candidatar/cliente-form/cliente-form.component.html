@@ -1,0 +1,47 @@
+<br>
+<br>
+
+<button type="button" (click)="novo()" class="btn btn-primary">Novo</button>
+<button type="button" (click)="salvar()" class="btn btn-success">Salvar</button>
+<button type="button" (click)="excluir()" class="btn btn-danger">Excluir</button>
+<button type="button" (click)="pesquisar()" class="btn btn-warning">Pesquisar</button>
+
+
+<form class="was-validated form-row" #cadastro="ngForm" (ngSubmit)="salvar()">
+  <div class="col-md-2 mb-3">
+    <label for="txtCodigo">C&oacute;digo</label>
+    <input type="text" [(ngModel)]="cliente.codigo" class="form-control" disabled name="txtCodigo">									
+  </div>
+
+  <div class="col-md-4 mb-3">
+    <label for="txtNome">Empresa</label>
+    <input type="text" [(ngModel)]="cliente.empresa" class="form-control is-valid" #nome="ngModel" name="txtNome" minlength="5" required>
+    <div  class="invalid-feedback">
+      Digite o nome da Empresa.			
+    </div>				
+  </div>
+
+  <div class="col-md-4 mb-3">
+    <label for="txtCargo">Programador</label>
+    <input type="text" [(ngModel)]="cliente.nome" class="form-control is-valid" #cargo="ngModel" name="txtCargo" required>
+    <div  class="invalid-feedback">
+      Digite o Nome do Programador.			
+    </div>				
+  </div>
+
+</form>
+
+    <br>
+    <br>
+    <div class="conteiner">
+      <button class="btn btn-success" type="submit"
+        [disabled]="cadastro.form.invalid">Enviar</button>
+        <button class="btn btn-warning" type="button"
+        (cliclk)="cancelar()">cancelar</button>
+    </div>
+			
+
+<br>
+<br>
+
+

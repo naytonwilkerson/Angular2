@@ -1,0 +1,25 @@
+<table class="table table-hover">
+    <thead>
+        <tr>
+          <th>C&oacute;digo</th>
+          <th>Nome</th>
+          <th>Linguagem</th>
+          <th>Cidade</th>
+          <th>Pa&iacute;s</th>
+          <th>Telefone</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let clienteTabela of clientes">
+         
+            <td>{{clienteTabela.codigo}}</td>	
+            <td>{{clienteTabela.nome}}</td>	
+            <td>{{clienteTabela.cargo}}</td>		
+            <td>{{clienteTabela.cidade}}</td>		
+            <td>{{clienteTabela.pais}}</td>	
+            <td>{{clienteTabela.telefone}}</td>	
+          </tr>
+        </tbody>		
+  </table>
+
+

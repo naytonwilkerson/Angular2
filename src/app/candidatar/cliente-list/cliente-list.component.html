@@ -1,0 +1,23 @@
+
+
+
+
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+          <th>C&oacute;digo</th>
+          <th>Empresa</th>
+          <th>Programador</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let clienteTabela of clientes">
+            <td>{{clienteTabela.codigo}}</td>	
+            <td>{{clienteTabela.empresa}}</td>	
+            <td>{{clienteTabela.nome}}</td>	
+          </tr>
+        </tbody>		
+  </table>
+
