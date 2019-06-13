@@ -9,6 +9,7 @@ import { LoginServiceService } from '../login-service.service';
 })
 export class LoginComponent implements OnInit {
 
+  private isNew: boolean = true;
   form: FormGroup;
   error = false;
   errorMessage = '';
